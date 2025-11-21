@@ -12,6 +12,7 @@ import {
 import { Phone, Menu, Search, MapPin, Mail } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { getImagePath } from "@/lib/utils";
 import { useEffect, useState } from "react";
 
 export function Header() {
@@ -46,7 +47,7 @@ export function Header() {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 flex-shrink-0">
               <Image
-                src="/parchem.svg"
+                src={getImagePath("/parchem.svg")}
                 alt="Parchem"
                 width={120}
                 height={28}
@@ -121,7 +122,7 @@ export function Header() {
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
                           <Image
-                            src="/parchem.svg"
+                            src={getImagePath("/parchem.svg")}
                             alt="Parchem"
                             width={120}
                             height={28}

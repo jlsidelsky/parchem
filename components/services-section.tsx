@@ -1,5 +1,6 @@
 import { Truck, Package, Settings, Globe } from "lucide-react";
 import Image from "next/image";
+import { getImagePath } from "@/lib/utils";
 
 const services = [
   {
@@ -65,7 +66,7 @@ export function ServicesSection() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src={service.image || "/placeholder.svg"}
+                    src={getImagePath(service.image || "/placeholder.svg")}
                     alt={service.title}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"

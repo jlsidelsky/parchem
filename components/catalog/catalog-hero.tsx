@@ -2,6 +2,7 @@ import { Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
+import { getImagePath } from "@/lib/utils";
 
 export function CatalogHero() {
   return (
@@ -9,7 +10,7 @@ export function CatalogHero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/chemical-warehouse-distribution-drums-barrels-stor.jpg"
+          src={getImagePath("/chemical-warehouse-distribution-drums-barrels-stor.jpg")}
           alt="Chemical warehouse distribution"
           fill
           className="object-cover"
@@ -62,42 +63,42 @@ export function CatalogHero() {
             </span>
             <div className="flex flex-wrap items-center gap-4">
               <Image
-                src="/images/cert3-201.png"
+                src={getImagePath("/images/cert3-201.png")}
                 alt="Kosher Certified"
                 width={40}
                 height={40}
                 className="h-10 w-10 object-contain bg-white rounded-full p-1"
               />
               <Image
-                src="/images/cert2-201.png"
+                src={getImagePath("/images/cert2-201.png")}
                 alt="USDA Organic"
                 width={40}
                 height={40}
                 className="h-10 w-10 object-contain bg-white rounded-full p-1"
               />
               <Image
-                src="/images/cert4-201.png"
+                src={getImagePath("/images/cert4-201.png")}
                 alt="DEA Certified"
                 width={40}
                 height={40}
                 className="h-10 w-10 object-contain bg-white rounded-full p-1"
               />
               <Image
-                src="/images/iso.png"
+                src={getImagePath("/images/iso.png")}
                 alt="NQA ISO Quality Management"
                 width={40}
                 height={40}
                 className="h-10 w-10 object-contain bg-white rounded-full p-1"
               />
               <Image
-                src="/images/cert5-201.png"
+                src={getImagePath("/images/cert5-201.png")}
                 alt="Department of Treasury"
                 width={40}
                 height={40}
                 className="h-10 w-10 object-contain bg-white rounded-full p-1"
               />
               <Image
-                src="/images/cert6-201.png"
+                src={getImagePath("/images/cert6-201.png")}
                 alt="Department of Justice"
                 width={40}
                 height={40}

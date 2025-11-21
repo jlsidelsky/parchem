@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { getImagePath } from "@/lib/utils";
 import { QuoteSearchCard } from "@/components/quote-search-card";
 
 export default function AboutPage() {
@@ -50,7 +51,9 @@ export default function AboutPage() {
       <section className="relative bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-primary-foreground overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
-            src="/modern-chemical-laboratory-with-scientists.jpg"
+            src={getImagePath(
+              "/modern-chemical-laboratory-with-scientists.jpg"
+            )}
             alt="Chemical Laboratory"
             fill
             className="object-cover"
@@ -113,7 +116,9 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/professional-chemical-warehouse-team-with-safety-e.jpg"
+                src={getImagePath(
+                  "/professional-chemical-warehouse-team-with-safety-e.jpg"
+                )}
                 alt="Parchem Team"
                 fill
                 className="object-cover"
@@ -166,7 +171,9 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl order-2 lg:order-1">
               <Image
-                src="/quality-control-laboratory-testing-chemical-sample.jpg"
+                src={getImagePath(
+                  "/quality-control-laboratory-testing-chemical-sample.jpg"
+                )}
                 alt="Quality Control"
                 fill
                 className="object-cover"
@@ -207,7 +214,9 @@ export default function AboutPage() {
       <section className="py-20 lg:py-28 bg-primary text-primary-foreground relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <Image
-            src="/abstract-chemical-molecular-structure-pattern.jpg"
+            src={getImagePath(
+              "/abstract-chemical-molecular-structure-pattern.jpg"
+            )}
             alt="Background Pattern"
             fill
             className="object-cover"

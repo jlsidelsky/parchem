@@ -1,5 +1,6 @@
 import { Package, Globe, Truck, Settings, CheckCircle } from "lucide-react";
 import Image from "next/image";
+import { getImagePath } from "@/lib/utils";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { QuoteSearchCard } from "@/components/quote-search-card";
@@ -19,7 +20,9 @@ export default function ServicesPage() {
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary/90 text-primary-foreground py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
-            src="/modern-chemical-industrial-plant-facility-pipes-to.jpg"
+            src={getImagePath(
+              "/modern-chemical-industrial-plant-facility-pipes-to.jpg"
+            )}
             alt="Chemical facility"
             fill
             className="object-cover"
@@ -85,7 +88,9 @@ export default function ServicesPage() {
               <div className="relative">
                 <div className="aspect-[4/3] relative rounded-2xl overflow-hidden bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
                   <Image
-                    src="/chemical-warehouse-distribution-drums-barrels-stor.jpg"
+                    src={getImagePath(
+                      "/chemical-warehouse-distribution-drums-barrels-stor.jpg"
+                    )}
                     alt="Chemical distribution warehouse"
                     fill
                     className="object-cover "
@@ -164,7 +169,7 @@ export default function ServicesPage() {
               <div className="relative order-1 lg:order-2">
                 <div className="aspect-[4/3] relative rounded-2xl overflow-hidden bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
                   <Image
-                    src="/global.png"
+                    src={getImagePath("/global.png")}
                     alt="Global sourcing network"
                     fill
                     className="object-cover "
@@ -187,7 +192,9 @@ export default function ServicesPage() {
               <div className="relative">
                 <div className="aspect-[4/3] relative rounded-2xl overflow-hidden bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
                   <Image
-                    src="/chemical-logistics-truck-transportation-warehouse-.jpg"
+                    src={getImagePath(
+                      "/chemical-logistics-truck-transportation-warehouse-.jpg"
+                    )}
                     alt="Chemical logistics and transportation"
                     fill
                     className="object-cover "
@@ -267,7 +274,9 @@ export default function ServicesPage() {
               <div className="relative order-1 lg:order-2">
                 <div className="aspect-[4/3] relative rounded-2xl overflow-hidden bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
                   <Image
-                    src="/chemical-manufacturing-equipment-processing-facili.jpg"
+                    src={getImagePath(
+                      "/chemical-manufacturing-equipment-processing-facili.jpg"
+                    )}
                     alt="Custom chemical manufacturing"
                     fill
                     className="object-cover "

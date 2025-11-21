@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
+import { getImagePath } from "@/lib/utils";
 export function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
@@ -10,7 +11,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Image
-                src="/parchem.svg"
+                src={getImagePath("/parchem.svg")}
                 alt="Parchem"
                 width={120}
                 height={28}

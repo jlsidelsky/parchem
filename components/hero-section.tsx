@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search, Shield, Award, Globe } from "lucide-react";
 import Image from "next/image";
+import { getImagePath } from "@/lib/utils";
 import { useState } from "react";
 
 export function HeroSection() {
@@ -14,7 +15,9 @@ export function HeroSection() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/modern-chemical-industrial-plant-facility-pipes-to.jpg"
+          src={getImagePath(
+            "/modern-chemical-industrial-plant-facility-pipes-to.jpg"
+          )}
           alt="Chemical plant facility"
           fill
           className="object-cover"
@@ -85,42 +88,42 @@ export function HeroSection() {
               </span>
               <div className="flex flex-wrap items-center gap-4">
                 <Image
-                  src="/images/cert3-201.png"
+                  src={getImagePath("/images/cert3-201.png")}
                   alt="Kosher Certified"
                   width={48}
                   height={48}
                   className="h-12 w-12 object-contain"
                 />
                 <Image
-                  src="/images/cert2-201.png"
+                  src={getImagePath("/images/cert2-201.png")}
                   alt="USDA Organic"
                   width={48}
                   height={48}
                   className="h-12 w-12 object-contain"
                 />
                 <Image
-                  src="/images/cert4-201.png"
+                  src={getImagePath("/images/cert4-201.png")}
                   alt="DEA Certified"
                   width={48}
                   height={48}
                   className="h-12 w-12 object-contain"
                 />
                 <Image
-                  src="/images/cert1-201.png"
+                  src={getImagePath("/images/cert1-201.png")}
                   alt="NQA ISO Quality Management"
                   width={48}
                   height={48}
                   className="h-12 w-12 object-contain"
                 />
                 <Image
-                  src="/images/cert5-201.png"
+                  src={getImagePath("/images/cert5-201.png")}
                   alt="Department of Treasury"
                   width={48}
                   height={48}
                   className="h-12 w-12 object-contain"
                 />
                 <Image
-                  src="/images/cert6-201.png"
+                  src={getImagePath("/images/cert6-201.png")}
                   alt="Department of Justice"
                   width={48}
                   height={48}

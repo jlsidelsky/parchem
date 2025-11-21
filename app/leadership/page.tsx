@@ -3,6 +3,7 @@ import Footer from "@/components/footer";
 import { QuoteSearchCard } from "@/components/quote-search-card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { getImagePath } from "@/lib/utils";
 import Link from "next/link";
 
 export const metadata = {
@@ -134,7 +135,9 @@ export default function LeadershipPage() {
       <section className="relative bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-primary-foreground overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
-            src="/professional-chemical-warehouse-team-with-safety-e.jpg"
+            src={getImagePath(
+              "/professional-chemical-warehouse-team-with-safety-e.jpg"
+            )}
             alt="Leadership Team"
             fill
             className="object-cover"
@@ -181,7 +184,7 @@ export default function LeadershipPage() {
                     {/* Profile Image */}
                     <div className="relative w-full md:w-96 h-80 rounded-xl overflow-hidden shrink-0 shadow-lg">
                       <Image
-                        src={member.image}
+                        src={getImagePath(member.image)}
                         alt={member.name}
                         fill
                         className="object-cover"
@@ -261,7 +264,7 @@ export default function LeadershipPage() {
                     {/* Profile Image */}
                     <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden mb-6">
                       <Image
-                        src={member.image}
+                        src={getImagePath(member.image)}
                         alt={member.name}
                         fill
                         className="object-cover"
@@ -328,7 +331,9 @@ export default function LeadershipPage() {
       <section className="py-20 lg:py-28 bg-primary text-primary-foreground relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <Image
-            src="/abstract-chemical-molecular-structure-pattern.jpg"
+            src={getImagePath(
+              "/abstract-chemical-molecular-structure-pattern.jpg"
+            )}
             alt="Background Pattern"
             fill
             className="object-cover"

@@ -11,6 +11,9 @@ const nextConfig = {
   // and replace 'chemical-supplier-ui' with your actual repository name
   basePath: "/parchem",
   trailingSlash: true,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: "/parchem",
+  },
 };
 
 export default nextConfig;
