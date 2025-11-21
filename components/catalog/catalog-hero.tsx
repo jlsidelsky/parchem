@@ -2,6 +2,7 @@ import { Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
+import Link from "next/link";
 import { getImagePath } from "@/lib/utils";
 
 export function CatalogHero() {
@@ -21,12 +22,12 @@ export function CatalogHero() {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-16 md:py-24 text-primary-foreground">
         <nav className="flex items-center gap-2 text-sm text-primary-foreground/80 mb-6">
-          <a
+          <Link
             href="/"
             className="hover:text-primary-foreground transition-colors"
           >
             Home
-          </a>
+          </Link>
           <span>/</span>
           <span className="text-primary-foreground">
             Chemical Products Catalog

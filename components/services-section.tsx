@@ -1,5 +1,6 @@
 import { Truck, Package, Settings, Globe } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { getImagePath } from "@/lib/utils";
 
 const services = [
@@ -59,7 +60,7 @@ export function ServicesSection() {
             const hash = hashMap[service.title] || "";
 
             return (
-              <a
+              <Link
                 href={`/services#${hash}`}
                 key={index}
                 className="group bg-card border border-border rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full"
@@ -87,7 +88,7 @@ export function ServicesSection() {
                     Learn more →
                   </span>
                 </div>
-              </a>
+              </Link>
             );
           })}
         </div>
