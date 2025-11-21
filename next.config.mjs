@@ -6,11 +6,11 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  output: 'export',
+  output: "export",
   // If your repository name is not 'username.github.io', uncomment the line below
   // and replace 'chemical-supplier-ui' with your actual repository name
-  // basePath: '/chemical-supplier-ui',
-  // trailingSlash: true,
-}
+  basePath: "/parchem",
+  trailingSlash: true,
+};
 
-export default nextConfig
+export default nextConfig;
