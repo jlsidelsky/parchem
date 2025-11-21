@@ -1,4 +1,5 @@
 import { Truck, Package, Settings, Globe } from "lucide-react";
+import Image from "next/image";
 
 const services = [
   {
@@ -63,10 +64,11 @@ export function ServicesSection() {
                 className="group bg-card border border-border rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full"
               >
                 <div className="relative h-48 overflow-hidden">
-                  <img
+                  <Image
                     src={service.image || "/placeholder.svg"}
                     alt={service.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent" />
                   <div className="absolute bottom-4 left-4 flex items-center justify-center w-12 h-12 rounded-lg bg-accent text-accent-foreground">

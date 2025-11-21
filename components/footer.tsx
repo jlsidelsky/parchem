@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Linkedin, Mail, MapPin, Phone } from "lucide-react";
-
+import Image from "next/image";
 export function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
@@ -9,9 +9,11 @@ export function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img
+              <Image
                 src="/parchem.svg"
                 alt="Parchem"
+                width={120}
+                height={28}
                 className="h-7 w-auto brightness-0 invert"
               />
               <span className="text-xl font-semibold">Parchem</span>

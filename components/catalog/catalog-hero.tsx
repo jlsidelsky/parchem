@@ -1,16 +1,18 @@
 import { Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import Image from "next/image";
 
 export function CatalogHero() {
   return (
     <section className="relative overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="/chemical-warehouse-distribution-drums-barrels-stor.jpg"
           alt="Chemical warehouse distribution"
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-primary/95 via-primary/90 to-primary/85" />
       </div>
@@ -59,34 +61,46 @@ export function CatalogHero() {
               Certifications:
             </span>
             <div className="flex flex-wrap items-center gap-4">
-              <img
+              <Image
                 src="/images/cert3-201.png"
                 alt="Kosher Certified"
+                width={40}
+                height={40}
                 className="h-10 w-10 object-contain bg-white rounded-full p-1"
               />
-              <img
+              <Image
                 src="/images/cert2-201.png"
                 alt="USDA Organic"
+                width={40}
+                height={40}
                 className="h-10 w-10 object-contain bg-white rounded-full p-1"
               />
-              <img
+              <Image
                 src="/images/cert4-201.png"
                 alt="DEA Certified"
+                width={40}
+                height={40}
                 className="h-10 w-10 object-contain bg-white rounded-full p-1"
               />
-              <img
+              <Image
                 src="/images/iso.png"
                 alt="NQA ISO Quality Management"
+                width={40}
+                height={40}
                 className="h-10 w-10 object-contain bg-white rounded-full p-1"
               />
-              <img
+              <Image
                 src="/images/cert5-201.png"
                 alt="Department of Treasury"
+                width={40}
+                height={40}
                 className="h-10 w-10 object-contain bg-white rounded-full p-1"
               />
-              <img
+              <Image
                 src="/images/cert6-201.png"
                 alt="Department of Justice"
+                width={40}
+                height={40}
                 className="h-10 w-10 object-contain bg-white rounded-full p-1"
               />
             </div>

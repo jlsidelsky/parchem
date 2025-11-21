@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/sheet";
 import { Phone, Menu, Search, MapPin, Mail } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export function Header() {
@@ -44,9 +45,11 @@ export function Header() {
           <div className="flex h-16 items-center justify-between gap-4">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-              <img
+              <Image
                 src="/parchem.svg"
                 alt="Parchem"
+                width={120}
+                height={28}
                 className={`h-7 w-auto transition-all duration-300 ${
                   isScrolled ? "brightness-0" : "brightness-0 invert"
                 }`}
@@ -117,9 +120,11 @@ export function Header() {
                     <SheetHeader className="border-b border-border px-6 py-6">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
-                          <img
+                          <Image
                             src="/parchem.svg"
                             alt="Parchem"
+                            width={120}
+                            height={28}
                             className="h-7 w-auto brightness-0"
                           />
                           <SheetTitle className="text-xl font-semibold">

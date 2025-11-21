@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
+import Image from "next/image";
 
 const functions = [
   { letter: "2", items: ["2-Benzylphenanthrenes"] },
@@ -259,34 +260,46 @@ export function CatalogFunctions() {
         {/* Certification badges at bottom */}
         <div className="mt-16 pt-12 border-t border-border">
           <div className="flex flex-wrap items-center justify-center gap-6">
-            <img
+            <Image
               src="/images/cert3-201.png"
               alt="Kosher Certified"
+              width={64}
+              height={64}
               className="h-16 w-16 object-contain"
             />
-            <img
+            <Image
               src="/images/cert2-201.png"
               alt="USDA Organic"
+              width={64}
+              height={64}
               className="h-16 w-16 object-contain"
             />
-            <img
+            <Image
               src="/images/cert4-201.png"
               alt="DEA Certified"
+              width={64}
+              height={64}
               className="h-16 w-16 object-contain"
             />
-            <img
+            <Image
               src="/images/cert1-201.png"
               alt="NQA ISO Quality Management"
+              width={64}
+              height={64}
               className="h-16 w-16 object-contain"
             />
-            <img
+            <Image
               src="/images/cert5-201.png"
               alt="Department of Treasury"
+              width={64}
+              height={64}
               className="h-16 w-16 object-contain"
             />
-            <img
+            <Image
               src="/images/cert6-201.png"
               alt="Department of Justice"
+              width={64}
+              height={64}
               className="h-16 w-16 object-contain"
             />
           </div>

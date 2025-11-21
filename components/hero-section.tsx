@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search, Shield, Award, Globe } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
 
 export function HeroSection() {
@@ -12,10 +13,11 @@ export function HeroSection() {
     <section className="relative overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="/modern-chemical-industrial-plant-facility-pipes-to.jpg"
           alt="Chemical plant facility"
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-primary/95 via-primary/90 to-primary/85" />
       </div>
@@ -82,34 +84,46 @@ export function HeroSection() {
                 Available certifications:
               </span>
               <div className="flex flex-wrap items-center gap-4">
-                <img
+                <Image
                   src="/images/cert3-201.png"
                   alt="Kosher Certified"
+                  width={48}
+                  height={48}
                   className="h-12 w-12 object-contain"
                 />
-                <img
+                <Image
                   src="/images/cert2-201.png"
                   alt="USDA Organic"
+                  width={48}
+                  height={48}
                   className="h-12 w-12 object-contain"
                 />
-                <img
+                <Image
                   src="/images/cert4-201.png"
                   alt="DEA Certified"
+                  width={48}
+                  height={48}
                   className="h-12 w-12 object-contain"
                 />
-                <img
+                <Image
                   src="/images/cert1-201.png"
                   alt="NQA ISO Quality Management"
+                  width={48}
+                  height={48}
                   className="h-12 w-12 object-contain"
                 />
-                <img
+                <Image
                   src="/images/cert5-201.png"
                   alt="Department of Treasury"
+                  width={48}
+                  height={48}
                   className="h-12 w-12 object-contain"
                 />
-                <img
+                <Image
                   src="/images/cert6-201.png"
                   alt="Department of Justice"
+                  width={48}
+                  height={48}
                   className="h-12 w-12 object-contain"
                 />
               </div>
